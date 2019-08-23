@@ -8,13 +8,18 @@
 // For this question, you are asked to make a function called 'callBinding'.
 // This function will take in 3 parameters:
 // magicAnimals (Array), updateAnimal (Function), id (Number).
-// Find the animal that matches the given id, then call the update function
+// Find the animal that matches the given id, then call the update function//wtf does it have and id? is it the index? is it a property??
 // with the animal as the context, and 'Trogdor' as a parameter.
 // return the result of your updateAnimal invocation
+////////////////////////arr        ,function,num
+function callBinding(magicAnimals, updateAnimal, id) {
+  console.log(magicAnimals, updateAnimal, id);
+}
+{return updateAnimal(magicAnimals[].name,'Trogdor')}
 
-// CODE HERE...
-
-
+//{id: 1, name: "Unicorn", ability: "Sparkles", favorites: Array(2)}
+ 
+   
 
 // *************
 // * PROBLEM 2 *
@@ -27,9 +32,7 @@
 // with the context of the animal, and the array ['being majestic', 'eating rainbows'] as a parameter.
 // return the result of your updateAnimal invocation
 
-// CODE HERE...
-
-
+function applyBinding(magicAnimals, updateAnimal, id) {}
 
 // *************
 // * PROBLEM 3 *
@@ -38,7 +41,7 @@
 // For this question, you are asked to make a function called 'promiseMe'.
 // This function will take in 1 parameter:
 // $q (Custom promise object).
-// NOTE: $q is an injected library, that works like angular's $q object.
+// NOTE: $q is an injected library, that works like angular's $q object. //helpful.
 // promiseMe will be invoked by a test and the test will expect a promise back.
 // In your function, create a custom promise, then create a timeout with a duration of 20 ms.
 // The timeout function should update the variable foo (seen below) to equal 'bar'.
@@ -47,9 +50,7 @@
 
 var foo;
 
-// CODE HERE...
-
-
+function promiseMe($q) {}
 
 // *************
 // * PROBLEM 4 *
